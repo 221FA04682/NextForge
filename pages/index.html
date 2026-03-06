@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexaForge — Build, Launch & Automate with AI</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav-footer.css">
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="progress-bar"></div>
+
+<!-- ===== NAV ===== -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">Nexa<span>Forge</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn-ghost">Sign In</button>
+    <button class="nav-btn-primary">Get Started →</button>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="menu-close" id="menu-close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="#services">Services</a>
+  <a href="#features">Features</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#pricing">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div class="mobile-overlay" id="mobile-overlay"></div>
+
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+
+  <div class="hero-inner">
+    <!-- Content -->
+    <div>
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        AI-Powered Platform — Now in Beta
+      </div>
+      <h1>Build, Launch<br>and <span class="gradient-text">Automate</span><br>with AI</h1>
+      <p class="hero-sub">Create stunning websites, deploy on blazing-fast infrastructure, and supercharge your business with intelligent AI integrations and automation — all in one platform.</p>
+      <div class="hero-btns">
+        <button class="btn-hero-primary">Start Building <span>→</span></button>
+        <button class="btn-hero-outline">▶ View Demo</button>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">500+</div>
+          <div class="hero-stat-label">Projects Launched</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">99.9%</div>
+          <div class="hero-stat-label">Uptime SLA</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">12ms</div>
+          <div class="hero-stat-label">Avg Response</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">200+</div>
+          <div class="hero-stat-label">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="hero-visual">
+      <div class="orbit-ring orbit-ring-3">
+        <div class="orbit-node on-blue" style="top:-19px;left:50%;transform:translateX(-50%)">🤖</div>
+        <div class="orbit-node on-purple" style="bottom:-19px;left:50%;transform:translateX(-50%)">🔗</div>
+      </div>
+      <div class="orbit-ring orbit-ring-2">
+        <div class="orbit-node on-cyan" style="left:-19px;top:50%;transform:translateY(-50%)">⚡</div>
+        <div class="orbit-node on-blue" style="right:-19px;top:50%;transform:translateY(-50%)">🌐</div>
+      </div>
+      <div class="orbit-ring orbit-ring-1">
+        <div class="orbit-node on-blue" style="top:-19px;left:50%;transform:translateX(-50%)">☁️</div>
+        <div class="orbit-node on-purple" style="bottom:-19px;left:50%;transform:translateX(-50%)">🔧</div>
+      </div>
+      <div class="orb-main">
+        <div class="orb-core">⬡</div>
+      </div>
+      <!-- Floating cards -->
+      <div class="f-card fc-top-right">
+        <div class="fc-icon" style="background:rgba(59,130,246,0.15)">🚀</div>
+        <div>
+          <div class="fc-title">Deployed Successfully</div>
+          <div class="fc-sub">nexaforge.app • 2s ago</div>
+        </div>
+      </div>
+      <div class="f-card fc-bottom-left">
+        <div class="fc-icon" style="background:rgba(168,85,247,0.15)">🤖</div>
+        <div>
+          <div class="fc-title">AI Model Active</div>
+          <div class="fc-sub">98.2% accuracy rate</div>
+        </div>
+      </div>
+      <div class="f-card fc-mid-left">
+        <div class="fc-icon" style="background:rgba(6,182,212,0.15)">⚡</div>
+        <div>
+          <div class="fc-title">Automation Running</div>
+          <div class="fc-sub">12 workflows active</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== LOGOS STRIP ===== -->
+<div class="logos-strip">
+  <div class="logos-label">Trusted by teams at</div>
+  <div style="overflow:hidden">
+    <div class="logos-track">
+      <span class="logo-name">TechCorp</span>
+      <span class="logo-name">NexaLab</span>
+      <span class="logo-name">DataFlow</span>
+      <span class="logo-name">CloudBase</span>
+      <span class="logo-name">AI Studio</span>
+      <span class="logo-name">DevStack</span>
+      <span class="logo-name">PixelCraft</span>
+      <span class="logo-name">LaunchPad</span>
+      <span class="logo-name">Automate.io</span>
+      <span class="logo-name">WebScale</span>
+      <!-- duplicate -->
+      <span class="logo-name">TechCorp</span>
+      <span class="logo-name">NexaLab</span>
+      <span class="logo-name">DataFlow</span>
+      <span class="logo-name">CloudBase</span>
+      <span class="logo-name">AI Studio</span>
+      <span class="logo-name">DevStack</span>
+      <span class="logo-name">PixelCraft</span>
+      <span class="logo-name">LaunchPad</span>
+      <span class="logo-name">Automate.io</span>
+      <span class="logo-name">WebScale</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Services</span>
+      <h2>Everything you need to<br><span class="gradient-text">build and grow</span></h2>
+      <p class="section-sub">From design to deployment, AI to automation — every layer of your digital presence, covered with precision.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card wide reveal">
+        <div class="svc-icon si-blue">🎨</div>
+        <h3>Website Design & Development</h3>
+        <p>Pixel-perfect, performance-optimized websites built with modern frameworks. We craft digital experiences that convert visitors into customers — every interaction designed with intent.</p>
+        <a href="#" class="svc-link">Learn more <span>→</span></a>
+      </div>
+      <div class="svc-card reveal reveal-delay-1">
+        <div class="svc-icon si-cyan">☁️</div>
+        <h3>Hosting & Deployment</h3>
+        <p>Enterprise-grade cloud with global CDN, SSL, DDoS protection, and zero-downtime deploys. Ship with complete confidence.</p>
+        <a href="#" class="svc-link">Learn more <span>→</span></a>
+      </div>
+      <div class="svc-card reveal reveal-delay-2">
+        <div class="svc-icon si-purple">🤖</div>
+        <h3>AI Integration</h3>
+        <p>Embed powerful AI — chatbots, recommendations, content generation, and predictive analytics — directly into your platform.</p>
+        <a href="#" class="svc-link">Learn more <span>→</span></a>
+      </div>
+      <div class="svc-card reveal reveal-delay-3">
+        <div class="svc-icon si-green">⚡</div>
+        <h3>Business Automation</h3>
+        <p>Eliminate repetitive tasks with smart workflows. Connect your tools, streamline operations, and reclaim hours every week.</p>
+        <a href="#" class="svc-link">Learn more <span>→</span></a>
+      </div>
+      <div class="svc-card reveal reveal-delay-4">
+        <div class="svc-icon si-pink">🔧</div>
+        <h3>Custom Web Projects</h3>
+        <p>Bespoke solutions for complex requirements — SaaS platforms, e-commerce ecosystems, and tailored software that scales.</p>
+        <a href="#" class="svc-link">Learn more <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FEATURES ===== -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="features-layout">
+
+      <!-- Panel -->
+      <div class="features-panel reveal">
+        <div class="terminal">
+          <div class="term-bar">
+            <div class="term-dot td-r"></div>
+            <div class="term-dot td-y"></div>
+            <div class="term-dot td-g"></div>
+            <span class="term-label">nexaforge — deploy --prod</span>
+          </div>
+          <div class="term-body">
+            <div><span class="tc">$</span> <span class="tw">nexaforge deploy --prod</span></div>
+            <div><span class="tm">  ▸ Building bundle...</span></div>
+            <div><span class="ts">  ✓ Build complete (8.2s)</span></div>
+            <div><span class="tm">  ▸ Pushing to 48 edge nodes...</span></div>
+            <div><span class="ts">  ✓ Global deployment done</span></div>
+            <div><span class="tm">  ▸ Spinning up AI models...</span></div>
+            <div><span class="ts">  ✓ LLM endpoints live</span></div>
+            <div><span class="tm">  ▸ Activating workflows...</span></div>
+            <div><span class="ts">  ✓ 12 automations running</span></div>
+            <div><span class="tp">  ✨ Live at:</span></div>
+            <div><span class="tc">  → https://yourapp.nexaforge.app</span></div>
+            <div><span class="tc">$ </span><span class="tcursor">█</span></div>
+          </div>
+        </div>
+        <div class="metrics-row">
+          <div class="metric-tile">
+            <div class="metric-val">99.99%</div>
+            <div class="metric-lbl">Uptime</div>
+          </div>
+          <div class="metric-tile">
+            <div class="metric-val">11ms</div>
+            <div class="metric-lbl">Latency</div>
+          </div>
+          <div class="metric-tile">
+            <div class="metric-val">48</div>
+            <div class="metric-lbl">Regions</div>
+          </div>
+          <div class="metric-tile">
+            <div class="metric-val">256TB</div>
+            <div class="metric-lbl">Data/day</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- List -->
+      <div>
+        <span class="section-tag reveal">Platform Features</span>
+        <h2 class="reveal" style="margin-bottom:18px;margin-top:16px">Built for speed,<br><span class="gradient-text">scale & intelligence</span></h2>
+        <p class="reveal" style="color:var(--muted2);font-size:16px;line-height:1.75;margin-bottom:44px;font-weight:300">Our platform combines cutting-edge infrastructure with AI-native tooling to give your projects an unfair advantage.</p>
+        <div class="feature-list">
+          <div class="feat-item reveal">
+            <div class="feat-icon">⚡</div>
+            <div class="feat-info">
+              <h4>Lightning Fast Hosting</h4>
+              <p>Global edge network with sub-20ms response times. Auto-scaling handles traffic spikes without configuration.</p>
+            </div>
+          </div>
+          <div class="feat-item reveal reveal-delay-1">
+            <div class="feat-icon">🧠</div>
+            <div class="feat-info">
+              <h4>AI-Powered Tools</h4>
+              <p>Integrated LLMs for content, code, and analytics. Build smarter products without becoming an AI engineer.</p>
+            </div>
+          </div>
+          <div class="feat-item reveal reveal-delay-2">
+            <div class="feat-icon">🧩</div>
+            <div class="feat-info">
+              <h4>No-Code / Low-Code Builder</h4>
+              <p>Visual builder for rapid prototyping with full code escape hatches for developers who want total control.</p>
+            </div>
+          </div>
+          <div class="feat-item reveal reveal-delay-3">
+            <div class="feat-icon">📈</div>
+            <div class="feat-info">
+              <h4>Scalable Infrastructure</h4>
+              <p>Container-native with automatic horizontal scaling — from 10 to 10M users, completely seamlessly.</p>
+            </div>
+          </div>
+          <div class="feat-item reveal reveal-delay-4">
+            <div class="feat-icon">🔄</div>
+            <div class="feat-info">
+              <h4>Automation Workflows</h4>
+              <p>300+ integrations with a visual workflow builder. Triggers, conditions, and actions in minutes, not days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PORTFOLIO ===== -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Recent Work</span>
+      <h2>Projects we're<br><span class="gradient-text">proud of</span></h2>
+      <p class="section-sub">A curated selection of digital products we've designed, engineered, and scaled for clients across industries.</p>
+    </div>
+
+    <div class="port-filter reveal">
+      <button class="port-btn active" data-filter="all">All Work</button>
+      <button class="port-btn" data-filter="web">Web Design</button>
+      <button class="port-btn" data-filter="ai">AI Projects</button>
+      <button class="port-btn" data-filter="automation">Automation</button>
+      <button class="port-btn" data-filter="saas">SaaS</button>
+    </div>
+
+    <!-- Bento Grid -->
+    <div class="port-grid">
+
+      <!-- 1: FinanceOS — Browser mock -->
+      <div class="port-item pi-1 reveal" data-cat="saas">
+        <div class="port-visual pv-1">
+          <div class="port-glow" style="width:200px;height:200px;background:rgba(59,130,246,0.15);top:0;left:0"></div>
+          <div class="mock-ui">
+            <div class="mock-browser-frame">
+              <div class="mock-topbar">
+                <div class="mock-circle mc-r"></div>
+                <div class="mock-circle mc-y"></div>
+                <div class="mock-circle mc-g"></div>
+                <div class="mock-url"></div>
+              </div>
+              <div class="mock-screen">
+                <div class="mock-hero-bar"></div>
+                <div class="mock-rows">
+                  <div class="mock-row"></div>
+                  <div class="mock-row short"></div>
+                  <div class="mock-row shorter"></div>
+                </div>
+                <div class="mock-grid-mini">
+                  <div class="mock-grid-cell"></div>
+                  <div class="mock-grid-cell" style="background:linear-gradient(135deg,rgba(59,130,246,0.15),rgba(168,85,247,0.1))"></div>
+                  <div class="mock-grid-cell"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">FinanceOS Dashboard</div>
+          <div class="port-tag">SaaS Platform</div>
+          <div class="port-tags">
+            <span class="port-pill">React</span>
+            <span class="port-pill">AI Analytics</span>
+            <span class="port-pill">Real-time</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: CX AI Chatbot — Full-width visual -->
+      <div class="port-item pi-2 reveal reveal-delay-1" data-cat="ai">
+        <div class="port-visual pv-2">
+          <div class="port-glow" style="width:280px;height:280px;background:rgba(168,85,247,0.2);top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+          <div class="ai-visual">
+            <div class="ai-bubble">Analyzing customer intent...</div>
+            <div class="ai-node">🤖</div>
+            <div class="ai-chips">
+              <span class="ai-chip">NLP</span>
+              <span class="ai-chip">GPT-4</span>
+              <span class="ai-chip">Sentiment</span>
+              <span class="ai-chip">Auto-resolve</span>
+            </div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">CX Intelligence Suite</div>
+          <div class="port-tag">AI Integration</div>
+          <div class="port-tags">
+            <span class="port-pill">LLM</span>
+            <span class="port-pill">Node.js</span>
+            <span class="port-pill">78% automation rate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: AutoPipeline — Flow diagram -->
+      <div class="port-item pi-3 reveal" data-cat="automation">
+        <div class="port-visual pv-3">
+          <div class="port-glow" style="width:160px;height:160px;background:rgba(34,197,94,0.15);top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+          <div class="flow-visual">
+            <div class="flow-node">Trigger<br>🔔</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">Process<br>⚙️</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">Deploy<br>🚀</div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">AutoPipeline Pro</div>
+          <div class="port-tag">Automation Platform</div>
+          <div class="port-tags">
+            <span class="port-pill">300+ integrations</span>
+            <span class="port-pill">No-code</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: Lumina Commerce — Browser mock minimal -->
+      <div class="port-item pi-4 reveal reveal-delay-1" data-cat="web">
+        <div class="port-visual pv-4">
+          <div class="port-glow" style="width:180px;height:180px;background:rgba(251,191,36,0.12);top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+          <div class="mock-ui">
+            <div class="mock-browser-frame">
+              <div class="mock-topbar">
+                <div class="mock-circle mc-r"></div>
+                <div class="mock-circle mc-y"></div>
+                <div class="mock-circle mc-g"></div>
+                <div class="mock-url"></div>
+              </div>
+              <div class="mock-screen">
+                <div class="mock-hero-bar" style="background:linear-gradient(90deg,#f59e0b,#ef4444);width:70%"></div>
+                <div class="mock-rows">
+                  <div class="mock-row"></div>
+                  <div class="mock-row short"></div>
+                </div>
+                <div class="mock-grid-mini">
+                  <div class="mock-grid-cell" style="background:rgba(245,158,11,0.12)"></div>
+                  <div class="mock-grid-cell"></div>
+                  <div class="mock-grid-cell" style="background:rgba(239,68,68,0.12)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">Lumina Commerce</div>
+          <div class="port-tag">E-commerce</div>
+          <div class="port-tags">
+            <span class="port-pill">Next.js</span>
+            <span class="port-pill">Shopify</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: DataVault — Chart visual -->
+      <div class="port-item pi-5 reveal reveal-delay-2" data-cat="ai">
+        <div class="port-visual pv-5">
+          <div class="port-glow" style="width:160px;height:160px;background:rgba(59,130,246,0.15);top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+          <div class="chart-visual">
+            <div class="chart-card">
+              <div class="chart-title">Monthly Revenue Analytics</div>
+              <div class="chart-bars">
+                <div class="chart-bar" style="height:35%"></div>
+                <div class="chart-bar" style="height:55%"></div>
+                <div class="chart-bar" style="height:45%"></div>
+                <div class="chart-bar" style="height:70%"></div>
+                <div class="chart-bar" style="height:60%"></div>
+                <div class="chart-bar" style="height:85%"></div>
+                <div class="chart-bar" style="height:75%"></div>
+                <div class="chart-bar" style="height:90%"></div>
+              </div>
+              <div class="chart-stats">
+                <div class="cstat">MRR <span>↑42%</span></div>
+                <div class="cstat">Users <span>12.4K</span></div>
+                <div class="cstat">Churn <span>↓2.1%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">DataVault Analytics</div>
+          <div class="port-tag">AI / Data Viz</div>
+          <div class="port-tags">
+            <span class="port-pill">Python</span>
+            <span class="port-pill">D3.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: GlobeMedia — Wide browser mock -->
+      <div class="port-item pi-6 reveal" data-cat="web">
+        <div class="port-visual pv-6">
+          <div class="port-glow" style="width:250px;height:250px;background:rgba(168,85,247,0.15);top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+          <div class="mock-ui" style="width:80%">
+            <div class="mock-browser-frame">
+              <div class="mock-topbar">
+                <div class="mock-circle mc-r"></div>
+                <div class="mock-circle mc-y"></div>
+                <div class="mock-circle mc-g"></div>
+                <div class="mock-url"></div>
+              </div>
+              <div class="mock-screen">
+                <div class="mock-hero-bar" style="background:linear-gradient(90deg,#a855f7,#ec4899);width:60%"></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:8px">
+                  <div style="height:50px;background:rgba(168,85,247,0.08);border-radius:4px"></div>
+                  <div style="height:50px;background:rgba(255,255,255,0.04);border-radius:4px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">GlobeMedia Agency</div>
+          <div class="port-tag">Web Design / Hosting</div>
+          <div class="port-tags">
+            <span class="port-pill">Angular</span>
+            <span class="port-pill">GSAP</span>
+            <span class="port-pill">99.99% uptime</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7: WorkflowOS — Automation board -->
+      <div class="port-item pi-7 reveal reveal-delay-2" data-cat="automation">
+        <div class="port-visual pv-7">
+          <div class="port-glow" style="width:220px;height:220px;background:rgba(6,182,212,0.12);top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:75%;position:relative;z-index:2">
+            <div style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.2);border-radius:10px;padding:12px;text-align:center;font-size:11px;color:var(--cyan2)">Email<br>🔔</div>
+            <div style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);border-radius:10px;padding:12px;text-align:center;font-size:11px;color:var(--blue2)">Filter<br>🔍</div>
+            <div style="background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.2);border-radius:10px;padding:12px;text-align:center;font-size:11px;color:var(--purple2)">CRM<br>📋</div>
+            <div style="background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);border-radius:10px;padding:12px;text-align:center;font-size:11px;color:#86efac">Notify<br>✉️</div>
+            <div style="background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.2);border-radius:10px;padding:12px;text-align:center;font-size:11px;color:#fde68a">Score<br>⭐</div>
+            <div style="background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.2);border-radius:10px;padding:12px;text-align:center;font-size:11px;color:#f9a8d4">Close<br>✅</div>
+          </div>
+        </div>
+        <div class="port-overlay">
+          <div class="port-title">WorkflowOS Platform</div>
+          <div class="port-tag">Business Automation</div>
+          <div class="port-tags">
+            <span class="port-pill">Vue.js</span>
+            <span class="port-pill">Zapier API</span>
+            <span class="port-pill">300+ integrations</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /port-grid -->
+  </div>
+</section>
+
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Process</span>
+      <h2>From idea to <span class="gradient-text">live in hours</span></h2>
+      <p class="section-sub">A streamlined four-step process that takes you from concept to a fully automated, live product — faster than you thought possible.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step reveal">
+        <div class="step-circle">01</div>
+        <h4>Create</h4>
+        <p>Start with our visual builder or bring your own codebase. Define your stack, connect your data, and shape your vision.</p>
+      </div>
+      <div class="step reveal reveal-delay-1">
+        <div class="step-circle">02</div>
+        <h4>Customize</h4>
+        <p>Fine-tune every detail — design systems, AI behavior, automation rules, and integrations to match your brand perfectly.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-circle">03</div>
+        <h4>Launch</h4>
+        <p>One-click global deployment across 48 edge nodes. SSL, CDN, and monitoring included out-of-the-box.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-circle">04</div>
+        <h4>Automate</h4>
+        <p>Set workflows in motion. AI handles the repetition while you focus on growing your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PRICING ===== -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Pricing</span>
+      <h2>Simple, <span class="gradient-text">transparent</span> pricing</h2>
+      <p class="section-sub">No hidden fees. No surprises. Pick the plan that fits — upgrade as you scale.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <div class="plan-tier">Starter</div>
+        <div class="plan-amount">
+          <span class="pa-sign">$</span>
+          <span class="pa-num">29</span>
+          <span class="pa-period">/mo</span>
+        </div>
+        <div class="plan-tagline">For freelancers and small projects getting started with modern web infrastructure.</div>
+        <ul class="plan-feats">
+          <li><span class="pf-check">✦</span> 3 websites</li>
+          <li><span class="pf-check">✦</span> 10 GB storage</li>
+          <li><span class="pf-check">✦</span> Custom domain + SSL</li>
+          <li><span class="pf-check">✦</span> Basic analytics</li>
+          <li><span class="pf-check">✦</span> 5 automation workflows</li>
+          <li><span class="pf-check">✦</span> Email support</li>
+        </ul>
+        <button class="plan-cta">Get Started →</button>
+      </div>
+      <div class="price-card hot reveal reveal-delay-1">
+        <div class="hot-badge">Popular</div>
+        <div class="plan-tier">Growth</div>
+        <div class="plan-amount">
+          <span class="pa-sign">$</span>
+          <span class="pa-num">89</span>
+          <span class="pa-period">/mo</span>
+        </div>
+        <div class="plan-tagline">For growing businesses needing AI capabilities, advanced automation, and premium performance.</div>
+        <ul class="plan-feats">
+          <li><span class="pf-check">✦</span> Unlimited websites</li>
+          <li><span class="pf-check">✦</span> 100 GB storage</li>
+          <li><span class="pf-check">✦</span> AI chatbot integration</li>
+          <li><span class="pf-check">✦</span> AI-powered analytics</li>
+          <li><span class="pf-check">✦</span> 50 automation workflows</li>
+          <li><span class="pf-check">✦</span> Priority support</li>
+          <li><span class="pf-check">✦</span> Custom AI model tuning</li>
+        </ul>
+        <button class="plan-cta plan-cta-hot">Get Started →</button>
+      </div>
+      <div class="price-card reveal reveal-delay-2">
+        <div class="plan-tier">Enterprise</div>
+        <div class="plan-amount">
+          <span class="pa-sign">$</span>
+          <span class="pa-num">249</span>
+          <span class="pa-period">/mo</span>
+        </div>
+        <div class="plan-tagline">For businesses demanding maximum performance, compliance, and white-glove support.</div>
+        <ul class="plan-feats">
+          <li><span class="pf-check">✦</span> Everything in Growth</li>
+          <li><span class="pf-check">✦</span> 1 TB storage</li>
+          <li><span class="pf-check">✦</span> Dedicated infrastructure</li>
+          <li><span class="pf-check">✦</span> Unlimited automations</li>
+          <li><span class="pf-check">✦</span> 99.99% SLA uptime</li>
+          <li><span class="pf-check">✦</span> 24/7 dedicated support</li>
+          <li><span class="pf-check">✦</span> Custom AI deployment</li>
+        </ul>
+        <button class="plan-cta">Contact Sales →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Testimonials</span>
+      <h2>Loved by <span class="gradient-text">builders & founders</span></h2>
+      <p class="section-sub">Here's what clients say after making the switch to NexaForge.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars"><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span></div>
+        <p class="testi-text">NexaForge transformed how we operate. We went from 3-week deployment cycles to shipping updates in hours. The AI integration alone saved us from hiring two engineers.</p>
+        <div class="testi-author">
+          <div class="testi-avatar ta-1">AK</div>
+          <div>
+            <div class="testi-name">Arjun Kapoor</div>
+            <div class="testi-role">CTO, TechCorp India</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars"><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span></div>
+        <p class="testi-text">The automation workflows are genuinely mind-blowing. Our entire lead-gen pipeline is now hands-free. Revenue is up 40% and the team finally has time to think strategically.</p>
+        <div class="testi-author">
+          <div class="testi-avatar ta-2">SR</div>
+          <div>
+            <div class="testi-name">Sofia Reyes</div>
+            <div class="testi-role">Founder, GrowthMachine</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars"><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span></div>
+        <p class="testi-text">I've tried Vercel, Netlify, and others. NexaForge is the first platform where I build, deploy AI, and wire automations all without switching tabs. It's an unfair advantage.</p>
+        <div class="testi-author">
+          <div class="testi-avatar ta-3">MN</div>
+          <div>
+            <div class="testi-name">Marcus Nielsen</div>
+            <div class="testi-role">Lead Dev, Cloudbase</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars"><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span></div>
+        <p class="testi-text">Our site loads under 800ms globally now. Bounce rate dropped 32% in the first month. The CDN and edge deployment is absolutely flawless.</p>
+        <div class="testi-author">
+          <div class="testi-avatar ta-4">PL</div>
+          <div>
+            <div class="testi-name">Priya Lakshmanan</div>
+            <div class="testi-role">Head of Digital, Lumina</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars"><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span></div>
+        <p class="testi-text">The AI chatbot handles 78% of our support tickets automatically. Response time went from 8 hours to 2 minutes. Customers are ecstatic. So are we.</p>
+        <div class="testi-author">
+          <div class="testi-avatar ta-5">JM</div>
+          <div>
+            <div class="testi-name">James Mbeki</div>
+            <div class="testi-role">CEO, DataFlow Africa</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars"><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span><span class="tstar">★</span></div>
+        <p class="testi-text">Their team built our entire SaaS MVP in 3 weeks. Design was stunning, performance off the charts, and the AI recommendation engine exceeded all expectations.</p>
+        <div class="testi-author">
+          <div class="testi-avatar ta-6">LV</div>
+          <div>
+            <div class="testi-name">Laura Vásquez</div>
+            <div class="testi-role">Co-founder, AIStudio Labs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CTA ===== -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="section-tag">Ready to launch?</span>
+      <h2 style="margin-top:16px;margin-bottom:18px">Start building your<br><span class="gradient-text">future today</span></h2>
+      <p>Join 200+ companies already using NexaForge to build faster, smarter, and with more automation than ever before.</p>
+      <div class="cta-btns">
+        <button class="btn-hero-primary">Start Building Free →</button>
+        <a href="contact.html" class="btn-hero-outline">📞 Talk to Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Nexa<span>Forge</span></a>
+        <p>Building the future of the web — intelligent, automated, and blazing-fast. Premium digital infrastructure for modern businesses.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon">𝕏</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">⌥</a>
+          <a href="#" class="social-icon">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Hosting</a></li>
+          <li><a href="#">AI Integration</a></li>
+          <li><a href="#">Automation</a></li>
+          <li><a href="#">Custom Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 NexaForge. All rights reserved.</div>
+      <div class="footer-badge">All systems operational</div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="../js/shared.js"></script>
+<script src="../js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — NexaForge</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav-footer.css">
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="progress-bar"></div>
+
+<!-- ===== NAV ===== -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">Nexa<span>Forge</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#features">Features</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#pricing">Pricing</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn-ghost">Sign In</button>
+    <button class="nav-btn-primary">Get Started →</button>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="menu-close" id="menu-close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="index.html#services">Services</a>
+  <a href="index.html#features">Features</a>
+  <a href="index.html#portfolio">Portfolio</a>
+  <a href="index.html#pricing">Pricing</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div class="mobile-overlay" id="mobile-overlay"></div>
+
+
+<!-- ===== PAGE HERO ===== -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <span class="section-tag reveal">Get In Touch</span>
+    <h1 class="reveal" style="margin-top:16px">Let's build something<br><span class="gradient-text">remarkable together</span></h1>
+    <p class="reveal" style="margin-top:18px">Have a project in mind? Want to explore AI integration or automation for your business? We'd love to hear about it — no pushy sales calls, just a genuine conversation.</p>
+  </div>
+</div>
+
+
+<!-- ===== MAIN CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Left: Info panel -->
+      <div class="contact-info">
+        <h2 class="ci-heading reveal">We respond<br><span class="gradient-text">within 24 hours</span></h2>
+        <p class="ci-sub reveal">Our team of engineers, designers, and AI specialists are ready to help you understand what's possible — and how to make it happen.</p>
+
+        <div class="ci-details">
+          <div class="ci-item reveal">
+            <div class="ci-icon-wrap ci-icon-blue">📧</div>
+            <div class="ci-text">
+              <h4>Email Us</h4>
+              <p><a href="mailto:hello@nexaforge.app">hello@nexaforge.app</a></p>
+              <p>We reply to every message, usually same day.</p>
+            </div>
+          </div>
+          <div class="ci-item reveal reveal-delay-1">
+            <div class="ci-icon-wrap ci-icon-purple">📞</div>
+            <div class="ci-text">
+              <h4>Book a Call</h4>
+              <p><a href="#">Schedule a 30-min discovery call →</a></p>
+              <p>Available Mon–Fri, 9am–6pm IST / GMT</p>
+            </div>
+          </div>
+          <div class="ci-item reveal reveal-delay-2">
+            <div class="ci-icon-wrap ci-icon-cyan">💬</div>
+            <div class="ci-text">
+              <h4>Live Chat</h4>
+              <p>Chat with our AI assistant 24/7, or a human agent during business hours.</p>
+            </div>
+          </div>
+          <div class="ci-item reveal reveal-delay-3">
+            <div class="ci-icon-wrap ci-icon-green">📍</div>
+            <div class="ci-text">
+              <h4>Headquarters</h4>
+              <p>Hyderabad, Telangana, India</p>
+              <p>+ Remote teams globally</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="reveal">
+          <div class="ci-social-heading">Find us online</div>
+          <div class="ci-socials">
+            <a href="#" class="ci-social-btn">𝕏 Twitter</a>
+            <a href="#" class="ci-social-btn">in LinkedIn</a>
+            <a href="#" class="ci-social-btn">⌥ GitHub</a>
+          </div>
+        </div>
+
+        <!-- Availability badge -->
+        <div class="ci-availability reveal">
+          <span class="avail-dot"></span>
+          <div>
+            <strong>Currently accepting new projects</strong> — typical project start within 2 weeks of signing.
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Right: Form panel -->
+      <div class="contact-form-wrap reveal">
+        <div id="form-inner">
+          <div class="form-title">Tell us about your project</div>
+          <p class="form-sub">Fill in the details below and we'll get back to you with a custom proposal within 24 hours.</p>
+
+          <!-- Service type pills -->
+          <div style="margin-bottom:8px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;color:var(--muted2)">I need help with</div>
+          <div class="service-pills" style="margin-bottom:28px">
+            <button class="service-pill selected">🌐 Website Development</button>
+            <button class="service-pill">☁️ Hosting & Deployment</button>
+            <button class="service-pill">🤖 AI Integration</button>
+            <button class="service-pill">⚡ Business Automation</button>
+            <button class="service-pill">🔧 Custom Project</button>
+            <button class="service-pill">💡 Consulting</button>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <!-- Name + Email -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address *</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="john@company.com" required>
+              </div>
+            </div>
+
+            <!-- Company + Phone -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="company">Company / Brand</label>
+                <input class="form-input" type="text" id="company" name="company" placeholder="Your Company Ltd.">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone (optional)</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+              </div>
+            </div>
+
+            <!-- Project type dropdown -->
+            <div class="form-group">
+              <label class="form-label" for="project-type">Project Type</label>
+              <select class="form-select" id="project-type" name="project-type">
+                <option value="" disabled selected>Select your project type...</option>
+                <option>New website from scratch</option>
+                <option>Redesign existing website</option>
+                <option>AI chatbot / assistant</option>
+                <option>Business automation workflows</option>
+                <option>SaaS platform development</option>
+                <option>E-commerce store</option>
+                <option>API / backend development</option>
+                <option>Something else</option>
+              </select>
+            </div>
+
+            <!-- Timeline -->
+            <div class="form-group">
+              <label class="form-label" for="timeline">Project Timeline</label>
+              <select class="form-select" id="timeline" name="timeline">
+                <option value="" disabled selected>When do you need this?</option>
+                <option>ASAP (within 2 weeks)</option>
+                <option>1–2 months</option>
+                <option>2–4 months</option>
+                <option>4+ months — we have time to plan</option>
+                <option>Ongoing partnership / retainer</option>
+              </select>
+            </div>
+
+            <!-- Budget -->
+            <div class="form-group">
+              <label class="form-label">Estimated Budget</label>
+              <div class="budget-options">
+                <button type="button" class="budget-opt">Under $1K</button>
+                <button type="button" class="budget-opt">$1K – $5K</button>
+                <button type="button" class="budget-opt picked">$5K – $15K</button>
+                <button type="button" class="budget-opt">$15K – $50K</button>
+                <button type="button" class="budget-opt">$50K+</button>
+                <button type="button" class="budget-opt">Let's discuss</button>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label class="form-label" for="message">Project Description *</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project — what problem you're solving, who your users are, and what success looks like for you..." required></textarea>
+            </div>
+
+            <!-- How did you hear -->
+            <div class="form-group">
+              <label class="form-label" for="referral">How did you find us?</label>
+              <select class="form-select" id="referral" name="referral">
+                <option value="" disabled selected>Select an option...</option>
+                <option>Google Search</option>
+                <option>LinkedIn</option>
+                <option>Twitter / X</option>
+                <option>Referred by a client</option>
+                <option>Product Hunt</option>
+                <option>Blog / Article</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <!-- Submit row -->
+            <div class="form-submit-row">
+              <p class="form-privacy">By submitting, you agree to our <a href="#">Privacy Policy</a>. No spam, ever.</p>
+              <button class="btn-submit" type="submit">
+                <span class="btn-text">Send Message</span>
+                <span>→</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Success state (hidden until submit) -->
+        <div class="form-success" id="form-success">
+          <div class="success-icon">✓</div>
+          <div class="success-title">Message sent!</div>
+          <p class="success-sub">Thanks for reaching out. Our team will review your project details and get back to you within 24 hours.</p>
+          <a href="index.html" class="btn-primary" style="margin-top:8px">Back to Home →</a>
+        </div>
+
+      </div><!-- /form-wrap -->
+    </div><!-- /contact-layout -->
+  </div>
+</section>
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">FAQ</span>
+      <h2>Questions we <span class="gradient-text">get asked</span></h2>
+      <p class="section-sub">Answers to the most common things people want to know before starting a project with us.</p>
+    </div>
+
+    <div class="faq-grid">
+
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-text">How long does a typical project take?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">It depends on complexity. A landing page can be live in 5–7 days. A full SaaS platform with AI integrations typically takes 6–12 weeks. We'll give you a detailed timeline after our discovery call.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you work with international clients?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Absolutely. We have clients across India, the US, UK, UAE, and Southeast Asia. All our communication and collaboration is fully remote-friendly.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-q">
+          <span class="faq-q-text">What technologies do you specialize in?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">We work primarily with Angular, React, Next.js, and Vue for frontend. Node.js, Python, and Go for backend. For AI, we integrate OpenAI, Anthropic, and custom fine-tuned models depending on the use case.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-text">Can you take over an existing project?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Yes — we regularly onboard onto existing codebases. We'll do a technical audit first to understand the architecture, then propose the most efficient path forward.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-q">
+          <span class="faq-q-text">What does hosting with NexaForge include?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">All hosting plans include SSL certificates, global CDN, DDoS protection, automated backups, uptime monitoring, and zero-downtime deployments across 48 edge locations worldwide.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you offer ongoing support after launch?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Yes. We offer monthly retainer plans for ongoing development, maintenance, and performance optimization. Many clients transition to a long-term partnership after the initial project.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-text">How do you handle NDAs and IP ownership?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">You own 100% of the code and assets we build for you. We're happy to sign NDAs before any discussions. Our contracts are straightforward, client-friendly, and reviewed by legal counsel.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-q">
+          <span class="faq-q-text">What's your payment structure?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Typically 40% upfront, 30% at midpoint milestone, and 30% on final delivery. For larger enterprise projects, we can arrange monthly billing or custom milestone-based payment schedules.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== OFFICES ===== -->
+<section class="offices-section" id="offices">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Global Presence</span>
+      <h2>Where we <span class="gradient-text">operate</span></h2>
+      <p class="section-sub">Headquartered in India, with remote team members across the globe to serve clients in every timezone.</p>
+    </div>
+    <div class="offices-grid">
+      <div class="office-card reveal">
+        <div class="office-flag">🇮🇳</div>
+        <div class="office-city">Hyderabad</div>
+        <div class="office-country">India · HQ</div>
+        <div class="office-addr">Hitech City, Madhapur<br>Hyderabad, Telangana 500081</div>
+        <div class="office-hours">Open · Mon–Sat, 9am–7pm IST</div>
+      </div>
+      <div class="office-card reveal reveal-delay-1">
+        <div class="office-flag">🇦🇪</div>
+        <div class="office-city">Dubai</div>
+        <div class="office-country">UAE · Partner Office</div>
+        <div class="office-addr">Dubai Internet City<br>Building 16, Dubai, UAE</div>
+        <div class="office-hours">Open · Sun–Thu, 9am–6pm GST</div>
+      </div>
+      <div class="office-card reveal reveal-delay-2">
+        <div class="office-flag">🌐</div>
+        <div class="office-city">Remote</div>
+        <div class="office-country">Worldwide · Distributed</div>
+        <div class="office-addr">Engineers and designers<br>in 8 countries across 3 continents</div>
+        <div class="office-hours">Available across all timezones</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Nexa<span>Forge</span></a>
+        <p>Building the future of the web — intelligent, automated, and blazing-fast. Premium digital infrastructure for modern businesses.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon">𝕏</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">⌥</a>
+          <a href="#" class="social-icon">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Hosting</a></li>
+          <li><a href="#">AI Integration</a></li>
+          <li><a href="#">Automation</a></li>
+          <li><a href="#">Custom Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 NexaForge. All rights reserved.</div>
+      <div class="footer-badge">All systems operational</div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="../js/shared.js"></script>
+<script src="../js/contact.js"></script>
+</body>
+</html>
